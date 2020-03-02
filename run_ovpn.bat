@@ -1,0 +1,1 @@
+openvpn --config cfg.ovpn --auth-user-pass pass.txt

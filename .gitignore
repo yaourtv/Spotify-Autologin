@@ -1,0 +1,5 @@
+*.jpg
+*.ovpn
+*.rar
+__pycache__
+pyenv
