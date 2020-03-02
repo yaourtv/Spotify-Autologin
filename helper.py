@@ -1,5 +1,7 @@
 import os
-import requests, zipfile, io
+import requests
+import zipfile
+import io
 from datetime import date
 
 
@@ -17,6 +19,7 @@ def main_worker(conf):
 
 	return login, password
 
+
 # Creates user with the unique name at vpnjatit
 def create_user(username, password, url):
 	data = {
@@ -24,17 +27,20 @@ def create_user(username, password, url):
 		'pass': password
 	}
 
-	requests.post(url = url, data = data)
+	requests.post(url=url, data=data)
+
 
 # Writes VPN login/password at the text file
 def write_credentials(username, password):
 	with open('pass.txt', 'w') as file:
 		file.write(username + '-vpnjantit.com\n' + password)
 
+
 # Obviously renames vpn config file
 def rename_config(prefix):
 	file = os.listdir(f'vpnconf/{prefix}.vpnjantit.com/')[1]
 	os.rename(f'vpnconf/{prefix}.vpnjantit.com/' + file, 'cfg.ovpn')
+
 
 # Downloads vpn config zip file and extracts it
 def downl_extract_config(url):
