@@ -1,5 +1,6 @@
 *.jpg
 *.ovpn
 *.rar
+pass.txt
 __pycache__
 pyenv
