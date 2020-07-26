@@ -1,4 +1,5 @@
 # Spotify Autologin
+#### UPD: Since Spotify launched in CIS and some issues with OpenVPN cli (probably only on Windows) disallow to automate connecting to OpenVPN network I see no more reason to maintain this project. It would left opened and archived just as a reminder how bad I used to code.
 ### What is it?
 Spotify Autologin is a simple script that uses OpenVPN and PyWinAuto to automate boring stuff like:
 - Creating temporary OpenVPN service account
@@ -19,5 +20,3 @@ If you don't have Spotify premium and Spotify is not accessible in your country 
 ### Would it be updated / do you accept PRs and Issues?
 Yes. I would like to get any feedback. There are still a lot of work to do (for example, catching failed POST requests and retries in [helper.py](helper.py)) and I hope that you would help me with that :)
 
-### License
-[MIT](https://choosealicense.com/licenses/mit/)
